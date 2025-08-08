@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import Button from "./reuseable/Button";
 
 const NavBar = () => {
   return (
@@ -12,7 +13,7 @@ const NavBar = () => {
         <a href="">About Us</a>
         <a href="">Campus</a>
         <a href="">Testimonials</a>
-        <button className="border-none rounded-3xl bg-white text-[#212121] py-[.6rem] w-[9rem]">Contact us</button>
+        <Button text="Contact us" bg={"bg-white"}/>
       </div>
     </nav>
   );
