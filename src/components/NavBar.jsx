@@ -13,7 +13,7 @@ const NavBar = () => {
         <a href="">About Us</a>
         <a href="">Campus</a>
         <a href="">Testimonials</a>
-        <Button text="Contact us" bg={"bg-white"}/>
+        <Button text="Contact us"  bg={"bg-white"}/>
       </div>
     </nav>
   );

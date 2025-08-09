@@ -1,6 +1,15 @@
-import arrow from "../../assets/white-arrow.png";
+import whitearrow from "../../assets/white-arrow.png";
+import darkarrow from "../../assets/dark-arrow.png";
 
-const Button = ({ text, onClick, image, bg='bg-blue', color='text-[#212121]' }) => {
+const Button = ({
+  text,
+  onClick,
+  image,
+  dark,
+  bg = "bg-blue",
+  color = "text-[#212121]",
+}) => {
+  const currentImage = dark;
   return (
     <div>
       <button
@@ -9,7 +18,7 @@ const Button = ({ text, onClick, image, bg='bg-blue', color='text-[#212121]' }) 
         {text}{" "}
         {image && (
           <div className="w-5">
-            <img className="w-full" src={arrow || image} alt="Next" />
+            <img className="w-full" src={currentImage? darkarrow:whitearrow} alt="Next" />
           </div>
         )}
       </button>

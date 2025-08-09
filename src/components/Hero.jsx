@@ -12,7 +12,7 @@ const Hero = () => {
         knowledge, skills, and experiences needed to excel in the dynamic field
         of education
       </p>
-      <Button text="Explore more" image={arrow} bg={"bg-white"} />
+      <Button text="Explore more" image dark bg={"bg-white"} />
     </div>
   );
 };

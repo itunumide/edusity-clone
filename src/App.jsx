@@ -3,6 +3,7 @@ import Campus from "./components/Campus";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Program from "./components/Program";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
        <Program />
        <About/>
        <Campus />
+       <Testimonials />
     </div>
   );
 };
