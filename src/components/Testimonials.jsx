@@ -1,10 +1,10 @@
 import Heading from "./reuseable/Heading";
 import prevArrow from "../assets/back-icon.png";
 import nextArrow from "../assets/next-icon.png";
-import user1 from '../assets/user-1.png'
-import user2 from '../assets/user-2.png'
-import user3 from '../assets/user-3.png'
-import user4 from '../assets/user-4.png'
+import user1 from "../assets/user-1.png";
+import user2 from "../assets/user-2.png";
+import user3 from "../assets/user-3.png";
+import user4 from "../assets/user-4.png";
 
 const Testimonials = () => {
   let studentsTestimonials = [
@@ -64,7 +64,11 @@ const Testimonials = () => {
             <div key={index} className=" max-w-[20vw]">
               <div className="flex items-center">
                 <div className="w-[60px]">
-                  <img src={student.image} alt="profile image" className="w-full"/>
+                  <img
+                    src={student.image}
+                    alt="profile image"
+                    className="w-full"
+                  />
                 </div>
                 <div>
                   <h3>{student.name}</h3>
