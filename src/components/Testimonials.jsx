@@ -55,32 +55,39 @@ const Testimonials = () => {
   return (
     <div className="w-full min-h-[90vh] text-grey flex  items-center justify-around flex-col">
       <Heading p={"TESTIMONIALS"} h2={"What Student Says"} />
-      <div className="flex items-center justify-between  w-[80vw] ">
-        <div className="w-[50px] h-[50px] flex items-center justify-center  rounded-[50%] bg-blue">
+      <div className="flex items-center justify-between relative w-[80vw] px-20">
+        <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
           <img src={prevArrow} alt=" prev arrow" className="w-5 " />
         </div>
-        <div className="flex flex-wrap flex-[.9]  gap-[2rem]">
-          {studentsTestimonials.map((student, index) => (
-            <div key={index} className=" max-w-[20vw]">
-              <div className="flex items-center">
-                <div className="w-[60px]">
-                  <img
-                    src={student.image}
-                    alt="profile image"
-                    className="w-full"
-                  />
-                </div>
-                <div>
-                  <h3>{student.name}</h3>
-                  <p>{student.school}</p>
-                </div>
-              </div>
-              <p>{student.testimony}</p>
-            </div>
-          ))}
-        </div>
-        <div className="w-[50px] h-[50px] flex items-center justify-center  rounded-[50%] bg-blue">
+        <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-blue">
           <img src={nextArrow} alt="next arrow" className="w-5 " />
+        </div>
+        <div className="overflow-hidden ">
+          <div className="flex overflow-x-hidden w-[300%] p-4 transition-all gap-8">
+            {studentsTestimonials.map((student, index) => (
+              <div
+                key={index}
+                className=" rounded-lg p-10 w-1/2 flex flex-col gap-4  shadow-lg"
+              >
+                <div className="flex items-center gap-3 ">
+                  <div className="w-[65px] border-[4px] rounded-[50%] border-blue">
+                    <img
+                      src={student.image}
+                      alt="profile image"
+                      className="w-full rounded-[50%] bg-cover bg-center"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-blue font-semibold text-lg leading-tight">
+                      {student.name}
+                    </h3>
+                    <p>{student.school}</p>
+                  </div>
+                </div>
+                <p>{student.testimony}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
