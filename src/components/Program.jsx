@@ -12,7 +12,7 @@ const Program = () => {
   return (
     <div id="program" className="min-h-[90vh] w-full py-[2rem] flex flex-col text-center justify-around items-center">
       <Heading p={"OUR PROGRAM"} h2={"What We Offer"}/>
-      <div className=" flex gap-[2rem] w-[70vw] ">
+      <div className=" flex gap-[2rem] w-[70vw] flex-wrap ">
         <ImageCard image1={program1} position={"relative"} text={"Graduation Degree"} image2={programIcon1}/>
          <ImageCard image1={program2} position={"relative"} text={"Master Degree"} image2={programIcon2}/>
           <ImageCard image1={program3} position={"relative"} text={"Post Graduation"} image2={programIcon3}/>

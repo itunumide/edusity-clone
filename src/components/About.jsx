@@ -5,7 +5,7 @@ import playicon from "../assets/play-icon.png";
 const About = () => {
   return (
     <div className="min-h-[90vh] w-full py-[1rem] flex  justify-around items-center">
-      <div className="w-[70vw] flex  gap-[2rem] ">
+      <div className="w-[70vw] flex  gap-[2rem] flex-wrap ">
         <div className=" flex-[.41] relative">
           <img
             src={aboutimage}

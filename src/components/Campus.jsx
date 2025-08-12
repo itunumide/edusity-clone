@@ -11,7 +11,7 @@ const Campus = () => {
   return (
     <div className="min-h-[90vh] w-full py-[1rem] flex flex-col text-center justify-around items-center">
       <Heading p={"GALLERY"} h2={"Campus Photos"}/>
-      <div className=" flex gap-[2rem] w-[70vw] ">
+      <div className=" flex gap-[2rem] w-[70vw] flex-wrap">
         <ImageCard image1={gallery1}/>
          <ImageCard image1={gallery2}/>
           <ImageCard image1={gallery3}/>
