@@ -5,7 +5,6 @@ import phoneIcon from "../assets/phone-icon.png";
 import locationIcon from "../assets/location-icon.png";
 import Form from "./Form";
 
-
 const Contact = () => {
   return (
     <div className="w-full min-h-[110vh] text-grey flex  items-center justify-around flex-col">
@@ -17,28 +16,24 @@ const Contact = () => {
             <img src={msgIcon} alt="message icon" className="w-10" />
           </h3>
           <p className="w-[98%]">
-            Feel free to reach out through contact form or find our contact
-            information below. Your feedback, questions, and suggestions are
-            important to us as we strive to provide exceptional service to our
-            university community.
+            We’re here to answer your questions, guide your journey, and provide
+            the information you need to make the best decision for your future.
           </p>
           <p className="flex items-center gap-3 ">
             <img className="w-7" src={mailIcon} alt="mail icon" />
-            Contact@GreatStack.dev
+            hello@educity.edu
           </p>
           <p className="flex items-center gap-3 ">
             <img className="w-7" src={phoneIcon} alt="phone icon" />
-            +1 123-456-7890
+            +1-555-789-2345
           </p>
           <p className="flex items-center gap-3 w-72 ">
             <img className="w-7" src={locationIcon} alt="location icon" />
-            77 Massachusetts Ave, Cambridge MA 02139, United States
+            25 University Plaza, Cambridge, MA 02139, United States
           </p>
         </div>
         <div className="flex flex-col flex-1 gap-4">
           <Form />
-          
-         
         </div>
       </div>
     </div>

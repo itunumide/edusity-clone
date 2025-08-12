@@ -11,15 +11,16 @@ const Testimonials = () => {
   const slider = useRef();
   let translateX = 0;
   const slideForward = () => {
-    if (translateX >-50) {
-      translateX -=16.7
+    if (translateX > -50) {
+      translateX -= 16.7;
     }
-    slider.current.style.transform = `translateX(${translateX}%)`
+    slider.current.style.transform = `translateX(${translateX}%)`;
   };
-  const slideBackward = () => {if (translateX <0) {
-      translateX +=16.7
+  const slideBackward = () => {
+    if (translateX < 0) {
+      translateX += 16.7;
     }
-    slider.current.style.transform = `translateX(${translateX}%)`
+    slider.current.style.transform = `translateX(${translateX}%)`;
   };
 
   let studentsTestimonials = [
@@ -39,18 +40,17 @@ const Testimonials = () => {
     },
     {
       image: user3,
-      name: "Emily Williams",
+      name: "Emily Carter",
       school: "Edusity, USA",
       testimony:
-        "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
+        "Studying here has been a life-changing experience. The resources, supportive faculty, and welcoming environment pushed me to aim higher than I ever thought possible.",
     },
     {
       image: user4,
-      name: "William Jackson",
+      name: "Daniel Brooks",
       school: "Edusity, USA",
       testimony:
-        "Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-    },
+        "The program challenged me academically while also giving me real-world skills. I left with not just a degree, but a clear sense of purpose."},
     {
       image: user1,
       name: "Emily Williams",
@@ -68,7 +68,10 @@ const Testimonials = () => {
   ];
 
   return (
-    <div id="testimonial" className="w-full min-h-[90vh] text-grey flex  items-center justify-around flex-col">
+    <div
+      id="testimonial"
+      className="w-full min-h-[90vh] text-grey flex  items-center justify-around flex-col"
+    >
       <Heading p={"TESTIMONIALS"} h2={"What Student Says"} />
       <div className="flex items-center justify-between relative w-[80vw] px-20">
         <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
@@ -80,13 +83,20 @@ const Testimonials = () => {
           />
         </div>
         <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-blue">
-          <img src={nextArrow} alt="next arrow" className="w-5 " onClick={slideForward} />
+          <img
+            src={nextArrow}
+            alt="next arrow"
+            className="w-5 "
+            onClick={slideForward}
+          />
         </div>
         <div className="overflow-hidden ">
-          <div  className="flex overflow-x-hidden w-[300%] p-4 transition-all gap-8" ref={slider}>
+          <div
+            className="flex overflow-x-hidden w-[300%] p-4 transition-all gap-8"
+            ref={slider}
+          >
             {studentsTestimonials.map((student, index) => (
               <div
-               
                 key={index}
                 className=" rounded-lg p-10 w-1/2 flex flex-col gap-4  shadow-lg"
               >

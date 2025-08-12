@@ -1,7 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import Button from "./reuseable/Button";
-import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [sticky, setSticky] = useState(false);
@@ -16,11 +15,11 @@ const NavBar = () => {
         <img src={logo} alt="logo" className="w-full" />
       </div>
       <div className="flex gap-[2.5rem] items-center">
-        <Link to="/">Home</Link>
-        <Link to="/program">Program</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/campus">Campus</Link>
-        <Link to="/testimonial">Testimonials</Link>
+        <a href="#">Home</a>
+        <a href="">Program</a>
+        <a href="">About Us</a>
+        <a href="">Campus</a>
+        <a href="">Testimonials</a>
         <Button text="Contact us" bg={"bg-white"} />
       </div>
     </nav>

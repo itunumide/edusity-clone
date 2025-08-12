@@ -17,7 +17,7 @@ const Campus = () => {
           <ImageCard image1={gallery3}/>
           <ImageCard image1={gallery4}/>
       </div>
-      <Button text={"See more here"} image color={"text-white"}/>
+      <Button text={"View More Moments"} image color={"text-white"}/>
     </div>
   )
 }

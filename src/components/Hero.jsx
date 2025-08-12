@@ -1,18 +1,19 @@
 import Button from "./reuseable/Button";
 
-
 const Hero = () => {
   return (
-    <div id="hero"
+    <div
+      id="hero"
       className="hero w-full min-h-[100vh] text-center text-white flex items-center justify-center flex-col"
     >
-      <h1 className="text-[3.7rem] max-w-[60vw] font-bold leading-tight">We Ensure better education for a better world</h1>
+      <h1 className="text-[3.7rem] max-w-[60vw] font-bold leading-tight">
+        Empowering Minds, Shaping the Future
+      </h1>
       <p className="max-w-[50vw] font-small-bold my-[1rem]">
-        Our cutting-edge curriculum is designed to empower students with the
-        knowledge, skills, and experiences needed to excel in the dynamic field
-        of education
+        Our innovative programs prepare learners with the skills, vision, and
+        confidence to make a lasting impact in the world of education.
       </p>
-      <Button text="Explore more" image dark bg={"bg-white"} />
+      <Button text="Discover More" image dark bg={"bg-white"} />
     </div>
   );
 };

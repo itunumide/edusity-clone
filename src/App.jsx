@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Campus from "./components/Campus";
 import Contact from "./components/Contact";
@@ -10,18 +9,16 @@ import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/program" element={<Program />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/campus" element={<Campus />} />
-        <Route path="/testimonial" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Router>
+       <Hero />
+       <Program />
+       <About/>
+       <Campus />
+       <Testimonials />
+       <Contact />
+       <Footer/>
+    </div>
   );
 };
 

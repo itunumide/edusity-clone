@@ -21,14 +21,14 @@ const About = () => {
         <div className="flex  gap-[.7rem] flex-[.59]  flex-col">
           <Heading
             p={"ABOUT UNIVERSITY"}
-            h2={"Nurturing Tomorrow's Leaders Today"}
+            h2={"Cultivating Tomorrow's Innovators"}
             text={"text-[1.125rem]"}
           />
           <p className="leading-tight text-grey ">
-            Embark on a transformative educational journey with our university's
-            comprehensive education programs. Our cutting-edge curriculum is
-            designed to empower students with the knowledge, skills, and
-            experiences needed to excel in the dynamic field of education.
+            Join a transformative learning journey where creativity meets
+            academic excellence. Our curriculum blends cutting-edge knowledge
+            with practical experience, ensuring you graduate ready to lead,
+            inspire, and innovate.
           </p>
           <p className="leading-tight text-grey ">
             With a focus on innovation, hands-on learning, and personalized
@@ -36,10 +36,10 @@ const About = () => {
             meaningful impact in classrooms, schools, and communities.
           </p>
           <p className="leading-tight text-grey ">
-            Whether you aspire to become a teacher, administrator, counselor, or
-            educational leader, our diverse range of programs offers the perfect
-            pathway to achieve your goals and unlock your full potential in
-            shaping the future of education.
+            Through experiential learning, dedicated guidance, and a diverse
+            range of disciplines, we help you turn ambition into achievement.
+            Whether your goal is to teach, manage, or pioneer new educational
+            paths, we're here to help you get there.
           </p>
         </div>
       </div>
