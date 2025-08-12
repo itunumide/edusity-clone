@@ -4,7 +4,7 @@ import mailIcon from "../assets/mail-icon.png";
 import phoneIcon from "../assets/phone-icon.png";
 import locationIcon from "../assets/location-icon.png";
 import Form from "./Form";
-import Button from "./reuseable/Button";
+
 
 const Contact = () => {
   return (
@@ -37,7 +37,8 @@ const Contact = () => {
         </div>
         <div className="flex flex-col flex-1 gap-4">
           <Form />
-          <Button text="Submit now" image color="text-white" />
+          
+         
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ const Button = ({
   text,
   onClick,
   image,
+  type,
   dark,
   bg = "bg-blue",
   color = "text-[#212121]",
@@ -12,7 +13,7 @@ const Button = ({
   const currentImage = dark;
   return (
     <div>
-      <button
+      <button onClick={onClick} type={type}
         className={`border-none flex justify-center items-center font-inherit gap-[.5rem] rounded-3xl ${bg} ${color} py-[.7rem] px-[1.5rem]`}
       >
         {text}{" "}

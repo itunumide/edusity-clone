@@ -1,9 +1,9 @@
 import Button from "./reuseable/Button";
-import arrow from "../assets/dark-arrow.png";
+
 
 const Hero = () => {
   return (
-    <div
+    <div id="hero"
       className="hero w-full min-h-[100vh] text-center text-white flex items-center justify-center flex-col"
     >
       <h1 className="text-[3.7rem] max-w-[60vw] font-bold leading-tight">We Ensure better education for a better world</h1>

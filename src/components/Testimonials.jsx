@@ -5,8 +5,23 @@ import user1 from "../assets/user-1.png";
 import user2 from "../assets/user-2.png";
 import user3 from "../assets/user-3.png";
 import user4 from "../assets/user-4.png";
+import { useRef } from "react";
 
 const Testimonials = () => {
+  const slider = useRef();
+  let translateX = 0;
+  const slideForward = () => {
+    if (translateX >-50) {
+      translateX -=16.7
+    }
+    slider.current.style.transform = `translateX(${translateX}%)`
+  };
+  const slideBackward = () => {if (translateX <0) {
+      translateX +=16.7
+    }
+    slider.current.style.transform = `translateX(${translateX}%)`
+  };
+
   let studentsTestimonials = [
     {
       image: user1,
@@ -53,19 +68,25 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="w-full min-h-[90vh] text-grey flex  items-center justify-around flex-col">
+    <div id="testimonial" className="w-full min-h-[90vh] text-grey flex  items-center justify-around flex-col">
       <Heading p={"TESTIMONIALS"} h2={"What Student Says"} />
       <div className="flex items-center justify-between relative w-[80vw] px-20">
         <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
-          <img src={prevArrow} alt=" prev arrow" className="w-5 " />
+          <img
+            src={prevArrow}
+            alt=" prev arrow"
+            className="w-5 "
+            onClick={slideBackward}
+          />
         </div>
         <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-blue">
-          <img src={nextArrow} alt="next arrow" className="w-5 " />
+          <img src={nextArrow} alt="next arrow" className="w-5 " onClick={slideForward} />
         </div>
         <div className="overflow-hidden ">
-          <div className="flex overflow-x-hidden w-[300%] p-4 transition-all gap-8">
+          <div  className="flex overflow-x-hidden w-[300%] p-4 transition-all gap-8" ref={slider}>
             {studentsTestimonials.map((student, index) => (
               <div
+               
                 key={index}
                 className=" rounded-lg p-10 w-1/2 flex flex-col gap-4  shadow-lg"
               >
