@@ -76,7 +76,7 @@ const Testimonials = () => {
     >
       <Heading p={"TESTIMONIALS"} h2={"What Student Says"} text="text-center" />
       <div className="flex items-center justify-between relative w-[93vw]  md:w-[80vw] px-12 md:px-20">
-        <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
+        <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-emerald">
           <img
             src={prevArrow}
             alt=" prev arrow"
@@ -84,7 +84,7 @@ const Testimonials = () => {
             onClick={slideBackward}
           />
         </div>
-        <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-blue">
+        <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-emerald">
           <img
             src={nextArrow}
             alt="next arrow"
@@ -103,7 +103,7 @@ const Testimonials = () => {
                 className=" rounded-lg p-10 w-1/2 flex flex-col gap-4  shadow-lg"
               >
                 <div className="flex items-center gap-3 ">
-                  <div className="w-[65px] border-[4px] rounded-[50%] border-blue">
+                  <div className="w-[65px] border-[4px] rounded-[50%] border-emerald">
                     <img
                       src={student.image}
                       alt="profile image"
@@ -111,7 +111,7 @@ const Testimonials = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-blue font-semibold text-lg leading-tight">
+                    <h3 className="text-emerald font-semibold text-lg leading-tight">
                       {student.name}
                     </h3>
                     <p>{student.school}</p>

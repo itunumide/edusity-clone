@@ -7,7 +7,7 @@ const Button = ({
   image,
   type,
   dark,
-  bg = "bg-blue",
+  bg = "bg-emerald",
   color = "text-[#212121]",
 }) => {
   const currentImage = dark;

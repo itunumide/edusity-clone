@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <nav
       className={` ${
-        sticky ? "bg-blue" : ""
+        sticky ? "bg-emerald" : ""
       } fixed w-full z-10 md:py-2 p-4 text-[#fff]  flex items-center justify-between md:justify-around`}
     >
       <div className=" md:w-[180px] w-[160px]">
@@ -36,7 +36,7 @@ const NavBar = () => {
         />
         {isMenuOpen && (
           <NavLinks
-            func={`flex flex-col w-[10rem] gap-4 min-h-screen bg-blue  absolute top-10 -right-4  p-4 rounded-md shadow-lg`}
+            func={`flex flex-col w-[10rem] gap-4 min-h-screen bg-emerald  absolute top-10 -right-4  p-4 rounded-md shadow-lg`}
           />
         )}
       </div>
