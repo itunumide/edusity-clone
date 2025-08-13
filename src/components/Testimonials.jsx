@@ -71,11 +71,11 @@ const Testimonials = () => {
 
   return (
     <div
-      id="testimonial"
-      className="w-full min-h-[90vh] text-grey flex mb-20 md:mb-1 items-center justify-around flex-col"
+      id="testimonials"
+      className="w-full min-h-[100vh] text-grey pt-16 md:pt-12 flex  md:mb-1 py-8 items-center justify-around flex-col"
     >
       <Heading p={"TESTIMONIALS"} h2={"What Student Says"} text="text-center" />
-      <div className="flex items-center justify-between relative w-[93vw] md:w-[80vw] px-12 md:px-20">
+      <div className="flex items-center justify-between relative w-[93vw]  md:w-[80vw] px-12 md:px-20">
         <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
           <img
             src={prevArrow}

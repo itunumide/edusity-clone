@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu-icon.png";
-import Button from "./reuseable/Button";
+
+import NavLinks from "./reuseable/NavLinks";
 
 const NavBar = () => {
   const [sticky, setSticky] = useState(false);
-  useState(() => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    console.log("Menu toggled:", !isMenuOpen);
+  };
+  useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY > 50 ? setSticky(true) : setSticky(false);
     });
@@ -19,16 +25,20 @@ const NavBar = () => {
       <div className=" md:w-[180px] w-[160px]">
         <img src={logo} alt="logo" className="w-full" />
       </div>
-      <div className="md:flex gap-[2.5rem] hidden  items-center">
-        <a href="#">Home</a>
-        <a href="">Program</a>
-        <a href="">About Us</a>
-        <a href="">Campus</a>
-        <a href="">Testimonials</a>
-        <Button text="Contact us" bg={"bg-white"} />
-      </div>
-      <div className=" w-8 md:hidden">
-        <img src={menu} alt="menu" className="w-full object-cover" />
+
+      <NavLinks func={"hidden md:flex"} />
+      <div className="md:hidden w-8 relative">
+        <img
+          src={menu}
+          onClick={toggleMenu}
+          alt="menu"
+          className="w-full object-cover"
+        />
+        {isMenuOpen && (
+          <NavLinks
+            func={`flex flex-col w-[10rem] gap-4 min-h-screen bg-blue  absolute top-10 -right-4  p-4 rounded-md shadow-lg`}
+          />
+        )}
       </div>
     </nav>
   );

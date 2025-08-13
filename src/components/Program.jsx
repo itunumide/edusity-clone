@@ -10,7 +10,7 @@ import programIcon3 from '../assets/program-icon-3.png'
 
 const Program = () => {
   return (
-    <div id="program" className="min-h-[90vh] w-full md:py-[2rem] py-[5rem] gap-20 md:0 flex flex-col text-center justify-around items-center">
+    <div id="program" className="md:min-h-[100vh] w-full  md:pt-4 pt-[6rem] gap-20 md:gap-0 flex flex-col text-center justify-around items-center">
       <Heading p={"OUR PROGRAM"} h2={"What We Offer"}/>
       <div className=" grid md:gap-[2rem] gap-[3rem] md:w-[70vw] w-[76vw]  md:grid-cols-3">
         <ImageCard image1={program1} position={"relative"} text={"Graduation Degree"} image2={programIcon1}/>

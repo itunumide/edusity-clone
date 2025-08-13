@@ -7,7 +7,7 @@ import Form from "./Form";
 
 const Contact = () => {
   return (
-    <div className="w-full min-h-[110vh] text-grey flex gap-20 md:gap-0  items-center justify-around flex-col">
+    <div id="contact" className="w-full min-h-[100vh] text-grey flex gap-20 md:gap-0 pt-24 mb-8 items-center justify-around flex-col">
       <Heading p={"CONTACT US"} h2={"Get in Touch"} text="text-center" />
       <div className="flex w-[70vw] md:gap-10 gap-16 flex-wrap ">
         <div className="flex flex-col gap-4 flex-1  ">
