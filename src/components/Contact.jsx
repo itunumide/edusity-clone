@@ -7,9 +7,9 @@ import Form from "./Form";
 
 const Contact = () => {
   return (
-    <div className="w-full min-h-[110vh] text-grey flex  items-center justify-around flex-col">
-      <Heading p={"CONTACT US"} h2={"Get in Touch"} />
-      <div className="flex w-[70vw] gap-10 flex-wrap ">
+    <div className="w-full min-h-[110vh] text-grey flex gap-20 md:gap-0  items-center justify-around flex-col">
+      <Heading p={"CONTACT US"} h2={"Get in Touch"} text="text-center" />
+      <div className="flex w-[70vw] md:gap-10 gap-16 flex-wrap ">
         <div className="flex flex-col gap-4 flex-1  ">
           <h3 className="flex items-center gap-3 text-[1.5rem] font-medium text-darkGray">
             Send us a message{" "}

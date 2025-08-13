@@ -10,9 +10,9 @@ import programIcon3 from '../assets/program-icon-3.png'
 
 const Program = () => {
   return (
-    <div id="program" className="min-h-[90vh] w-full py-[2rem] flex flex-col text-center justify-around items-center">
+    <div id="program" className="min-h-[90vh] w-full md:py-[2rem] py-[5rem] gap-20 md:0 flex flex-col text-center justify-around items-center">
       <Heading p={"OUR PROGRAM"} h2={"What We Offer"}/>
-      <div className=" flex gap-[2rem] w-[70vw] flex-wrap ">
+      <div className=" grid md:gap-[2rem] gap-[3rem] md:w-[70vw] w-[76vw]  md:grid-cols-3">
         <ImageCard image1={program1} position={"relative"} text={"Graduation Degree"} image2={programIcon1}/>
          <ImageCard image1={program2} position={"relative"} text={"Master Degree"} image2={programIcon2}/>
           <ImageCard image1={program3} position={"relative"} text={"Post Graduation"} image2={programIcon3}/>

@@ -19,6 +19,8 @@ const Testimonials = () => {
   const slideBackward = () => {
     if (translateX < 0) {
       translateX += 16.7;
+     
+      
     }
     slider.current.style.transform = `translateX(${translateX}%)`;
   };
@@ -70,11 +72,11 @@ const Testimonials = () => {
   return (
     <div
       id="testimonial"
-      className="w-full min-h-[90vh] text-grey flex  items-center justify-around flex-col"
+      className="w-full min-h-[90vh] text-grey flex mb-20 md:mb-1 items-center justify-around flex-col"
     >
-      <Heading p={"TESTIMONIALS"} h2={"What Student Says"} />
-      <div className="flex items-center justify-between relative w-[80vw] px-20">
-        <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
+      <Heading p={"TESTIMONIALS"} h2={"What Student Says"} text="text-center" />
+      <div className="flex items-center justify-between relative w-[93vw] md:w-[80vw] px-12 md:px-20">
+        <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] left-0 right-auto rounded-[50%] bg-blue">
           <img
             src={prevArrow}
             alt=" prev arrow"
@@ -82,7 +84,7 @@ const Testimonials = () => {
             onClick={slideBackward}
           />
         </div>
-        <div className="w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-blue">
+        <div className="w-[45px] md:w-[50px] p-[15px] absolute top-1/2 cursor-pointer translate-y-[-50%] right-0 rounded-[50%] bg-blue">
           <img
             src={nextArrow}
             alt="next arrow"
@@ -92,7 +94,7 @@ const Testimonials = () => {
         </div>
         <div className="overflow-hidden ">
           <div
-            className="flex overflow-x-hidden w-[300%] p-4 transition-all gap-8"
+            className="flex overflow-x-hidden w-[600%] md:w-[300%] p-4 transition-all gap-8"
             ref={slider}
           >
             {studentsTestimonials.map((student, index) => (

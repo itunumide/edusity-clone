@@ -4,21 +4,24 @@ import playicon from "../assets/play-icon.png";
 
 const About = () => {
   return (
-    <div className="min-h-[90vh] w-full py-[1rem] flex  justify-around items-center">
-      <div className="w-[70vw] flex  gap-[2rem] flex-wrap ">
-        <div className=" flex-[.41] relative">
+    <div className="min-h-[90vh] w-full py-[1rem] flex mb-20 md:mb-1  justify-around items-center">
+      <div className="md:w-[70vw] w-[80vw] flex  gap-[2rem]  flex-col-reverse md:flex-row">
+        <div className=" md:flex-[.41] w-[76vw] md:w-full mx-auto relative">
           <img
             src={aboutimage}
             alt="about image"
             className=" rounded-lg bg-cover bg-center"
           />
-          <img
-            src={playicon}
-            alt="play icon"
-            className="absolute w-[60px] cursor-pointer top-40 right-40"
-          />
+          <div className="absolute inset-0 flex justify-center items-center">
+            {" "}
+            <img
+              src={playicon}
+              alt="play icon"
+              className=" w-[60px] cursor-pointer "
+            />
+          </div>
         </div>
-        <div className="flex  gap-[.7rem] flex-[.59]  flex-col">
+        <div className="flex  gap-[.7rem] md:flex-[.59]  flex-col">
           <Heading
             p={"ABOUT UNIVERSITY"}
             h2={"Cultivating Tomorrow's Innovators"}

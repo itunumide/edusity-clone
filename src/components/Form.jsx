@@ -28,7 +28,7 @@ const Form = () => {
     }
   };
   return (
-    <form onSubmit={onSubmit} className="w-full text-grey flex flex-col gap-2">
+    <form onSubmit={onSubmit} className="w-full text-grey flex flex-col gap-3">
       <Input
         id={"name"}
         type={"text"}

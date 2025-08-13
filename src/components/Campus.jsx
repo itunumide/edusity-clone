@@ -9,9 +9,9 @@ import Button from "./reuseable/Button"
 
 const Campus = () => {
   return (
-    <div className="min-h-[90vh] w-full py-[1rem] flex flex-col text-center justify-around items-center">
+    <div className="min-h-[90vh] w-full py-[1rem] gap-20 mt-10 mb-20 md:my-1 md:gap-1 flex flex-col text-center justify-around items-center">
       <Heading p={"GALLERY"} h2={"Campus Photos"}/>
-      <div className=" flex gap-[2rem] w-[70vw] flex-wrap">
+      <div className=" grid md:gap-8 gap-y-8 gap-x-4 w-[90vw] md:w-[70vw] grid-cols-2 md:grid-cols-4 ">
         <ImageCard image1={gallery1}/>
          <ImageCard image1={gallery2}/>
           <ImageCard image1={gallery3}/>
