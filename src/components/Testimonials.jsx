@@ -1,10 +1,10 @@
 import Heading from "./reuseable/Heading";
 import prevArrow from "../assets/back-icon.png";
 import nextArrow from "../assets/next-icon.png";
-import user1 from "../assets/user-1.png";
-import user2 from "../assets/user-2.png";
-import user3 from "../assets/user-3.png";
-import user4 from "../assets/user-4.png";
+import user1 from "../assets/user-1.jpg";
+import user2 from "../assets/user-2.jpg";
+import user3 from "../assets/user-3.jpg";
+import user4 from "../assets/user-4.jpg";
 import { useRef } from "react";
 
 const Testimonials = () => {

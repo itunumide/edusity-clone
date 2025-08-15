@@ -1,7 +1,7 @@
-const ImageCard = ({ image1, image2, text, position }) => {
+const ImageCard = ({ image1, image2, text, height, position }) => {
   return (
     <div className={`w-full ${position} group`}>
-      <img src={image1} alt={image1} className="w-full rounded-xl " />
+      <img src={image1} alt={image1} className={`${height}w-full rounded-xl ${height}`} />
       {image2 && (
         <div
           className="flex flex-col items-center justify-center gap-4 

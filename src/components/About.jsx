@@ -1,5 +1,5 @@
 import Heading from "./reuseable/Heading";
-import aboutimage from "../assets/about.png";
+import aboutimage from "../assets/about.jpg";
 import playicon from "../assets/play-icon.png";
 import { Element } from "react-scroll";
 
@@ -8,18 +8,18 @@ const About = () => {
     <Element name="about">
       <div className="min-h-[100vh] w-full py-[1rem] pt-24 md:pt-0 flex  justify-around items-center">
         <div className="md:w-[70vw] w-[80vw] flex  gap-[2rem]  flex-col-reverse md:flex-row">
-          <div className=" md:flex-[.41] w-[76vw] md:w-full mx-auto relative">
+          <div className=" md:flex-[.41] w-[76vw]  md:w-full mx-auto relative">
             <img
               src={aboutimage}
               alt="about image"
-              className=" rounded-lg bg-cover bg-center"
+              className=" rounded-lg bg-cover bg-center h-full object-cover"
             />
-            <div className="absolute inset-0 flex justify-center items-center">
+            <div className="absolute inset-0 flex  justify-center items-center">
               {" "}
               <img
                 src={playicon}
                 alt="play icon"
-                className=" w-[60px] cursor-pointer "
+                className=" w-[70px] cursor-pointer "
               />
             </div>
           </div>
