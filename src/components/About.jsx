@@ -11,7 +11,7 @@ const About = () => {
     <Element name="about">
       <div className="min-h-[100vh] w-full py-[1rem] pt-24 md:pt-0 flex  justify-around items-center">
         <div className="md:w-[70vw] w-[80vw] flex  gap-[2rem]  flex-col-reverse md:flex-row">
-          <div className=" md:flex-[.41] w-[76vw]  md:w-full mx-auto relative">
+          <div className=" md:flex-[.41] w-[76vw] h-[60vw] md:h-full md:w-full mx-auto relative">
             <img
               src={aboutimage}
               alt="about image"
