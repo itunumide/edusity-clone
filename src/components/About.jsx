@@ -2,8 +2,11 @@ import Heading from "./reuseable/Heading";
 import aboutimage from "../assets/about.jpg";
 import playicon from "../assets/play-icon.png";
 import { Element } from "react-scroll";
+import VideoPlayer from "./VideoPlayer";
+import { useState } from "react";
 
 const About = () => {
+  const [playState, setPlayState] = useState(false);
   return (
     <Element name="about">
       <div className="min-h-[100vh] w-full py-[1rem] pt-24 md:pt-0 flex  justify-around items-center">
@@ -19,6 +22,7 @@ const About = () => {
               <img
                 src={playicon}
                 alt="play icon"
+                onClick={()=>{setPlayState(true)}}
                 className=" w-[70px] cursor-pointer "
               />
             </div>
@@ -49,6 +53,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <VideoPlayer playState={playState} setPlayState={setPlayState}/>
     </Element>
   );
 };

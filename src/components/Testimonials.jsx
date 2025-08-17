@@ -103,11 +103,11 @@ const Testimonials = () => {
                 className=" rounded-lg p-10 w-1/2 flex flex-col gap-4  shadow-lg"
               >
                 <div className="flex items-center gap-3 ">
-                  <div className="w-[65px] border-[4px] rounded-[50%] border-emerald">
+                  <div className="w-[65px] h-[65px] border-[4px] rounded-[50%] border-emerald">
                     <img
                       src={student.image}
                       alt="profile image"
-                      className="w-full rounded-[50%] bg-cover bg-center"
+                      className="w-full h-full rounded-[50%] bg-cover bg-center"
                     />
                   </div>
                   <div>

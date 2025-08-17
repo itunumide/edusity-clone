@@ -1,13 +1,15 @@
 import Heading from "./reuseable/Heading";
 import msgIcon from "../assets/msg-icon.png";
-import mailIcon from "../assets/mail-icon.png";
-import phoneIcon from "../assets/phone-icon.png";
-import locationIcon from "../assets/location-icon.png";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+
 import Form from "./Form";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full min-h-[100vh] text-grey flex gap-20 md:gap-0 pt-24 mb-8 items-center justify-around flex-col">
+    <div
+      id="contact"
+      className="w-full min-h-[100vh] text-grey flex gap-20 md:gap-8 pt-24 mb-8 items-center justify-around flex-col"
+    >
       <Heading p={"CONTACT US"} h2={"Get in Touch"} text="text-center" />
       <div className="flex w-[70vw] md:gap-10 gap-16 flex-wrap ">
         <div className="flex flex-col gap-4 flex-1  ">
@@ -20,15 +22,15 @@ const Contact = () => {
             the information you need to make the best decision for your future.
           </p>
           <p className="flex items-center gap-3 ">
-            <img className="w-7" src={mailIcon} alt="mail icon" />
+            <FaEnvelope className="text-3xl text-emerald" />
             hello@educity.edu
           </p>
           <p className="flex items-center gap-3 ">
-            <img className="w-7" src={phoneIcon} alt="phone icon" />
+            <FaPhoneAlt className="text-2xl text-emerald" />
             +1-555-789-2345
           </p>
           <p className="flex items-center gap-3 w-72 ">
-            <img className="w-7" src={locationIcon} alt="location icon" />
+            <FaMapMarkerAlt className="text-3xl text-emerald" />
             25 University Plaza, Cambridge, MA 02139, United States
           </p>
         </div>
